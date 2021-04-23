@@ -1,0 +1,266 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Trabalho Warner</title>
+        <meta charset="utf-8">
+        <!--Autor-->
+        <meta name="author" content="Villas">
+        <!--Descrição-->
+        <meta name="description" content="Trabalho Warner">
+        <!--Palavra Chaves-->
+        <meta name="keywords" content="Futebol, Rivalidade">
+
+        <!-- Link Css Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <!-- Link Js Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        
+        <!--Link para nosso Arquivo Js-->
+        <script src="js/script.js">
+        </script>
+
+        <!--Link para nosso aquivo Css-->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+          <!--Parte Superior-->
+            <div class="hero">
+                <nav>
+                  <!--Trabalhamos com uma Lista de itens-->
+                    <ul>
+                        <!--utilizando um Link e invocando uma função JS-->
+                        <li><a href="faleconosco.html" onclick="acao()">Fale Conosco</a></li>
+                        <li><a href="sobrenos.html" onclick="acao1()">Sobre Nós</a></li>
+                        <li><a href="curiosidades.html" onclick="acao2()">Curiosidades Históricas</a></li>
+                        <li><a href="opiniao.html" onclick="acao4()">Opine Aqui</a></li>
+                    </ul>
+                </nav>
+                <div class="hero-content">
+                    <h1>RIVALIDADE TRIPLA</h1>
+                    <br>
+                    <p>HTML / CSS / JAVASCRIPT</p>
+                </div>
+            </div>
+            
+            <!--Parte Principal / Conteúdo -->
+            <main>
+               <!--Parte das Imagens-->
+                <section class="content-section">
+                    <!--Cada card de uma imagem-->
+                    <div class="card card-1">
+                        <!--Adcionando um Link para as Imagens, e indicando a invocação de um modal ao clique-->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="imagens/corinthians.png" alt="Corinthians"></a>
+                        <p style="text-align: center; text-transform: uppercase;"><b>Corinthians</b></p>
+                    </div>
+                    
+                    <div class="card card-2">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="imagens/saopaulo.png" alt="São Paulo"></a>
+                        <p style="text-align: center; text-transform: uppercase;"><b>São Paulo</b></p>
+                    </div>
+                    
+                    <div class="card card-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="imagens/palmeiras.png" alt="Palmeiras"></a>
+                        <p style="text-align: center; text-transform: uppercase;"><b>Palmeiras</b></p>
+                    </div>
+                </section>
+                
+                <!--Parte de mais escrita-->
+                <section class="content-section">
+                    <article>
+                        <header class="content-header"><h2>Rivalidade Entre os Clubes Paulistas</h2></header>
+                        <br>
+                        <h4 class="content-header">Corinthians X São Paulo</h4>
+                        <p>Também considerado um dos maiores clássicos nacionais, o “Majestoso” 
+                          assim chamado o confronto entre os dois clubes começou a ganhar um 
+                          força na década de 90, tendp como destaque a disputa pelo título 
+                          Brasileiro de 1990 aonde o clube alvinegro bate o seu rival por 1 a 0 e 
+                          conquista seu primeiro título Brasileiro.  Nessa Década ambos clubes 
+                          tiveram uma relevância muito grande no cenário nacional e de títulos 
+                          tendo o Corinthians conquistado 3 títulos do campeonato brasileiro e 
+                          uma copa do brasil e o São Paulo sendo campeão Brasileiro de 1991 e 
+                          conquistando na sequencia dois títulos de libertadores 1992 e 1993,
+                           também sendo campeão mundial nesses dois anos.</p>
+
+                        <h4 class="content-header">Corinthians X Palmeiras</h4>
+                        <p>“Derby” assim chamado o confronto entre esses clubes é considerado
+                           por muitos o maior Clássico do país e um dos clássicos mais 
+                           importantes do mundo. A rivalidade entre esses dois clubes vai 
+                           muito além do futebol, sendo uma rivalidade politica e até mesmo 
+                           econômica, fazendo com que esse clássico ganhe ainda mais força entre 
+                           os torcedores da capital, além de históricos confrontos entre ambos 
+                           como a Semifinal de libertadores no ano de 2000, na qual o palmeiras 
+                           leva a melhor se classificando para final contra  o Boca Juniors e a 
+                           final do Campeonato Paulista de 1999 porém dessa vez o clube alvinegro 
+                           leva a melhor garantindo o título em cima do rival. </p>
+
+                        <h4 class="content-header">Palmeiras X São Paulo</h4>
+                        <p>“Choque Rei” é o nome dado esse clássico paulistano, sendo 
+                          uma disputa extremamente equilibrada entre ambos os clubes, 
+                          já que ambos clubes possuem o mesmo número  de vitórias (109 para cada), 
+                          os clubes tem sua rivalidade marcada durante as disputa durante a década 70 
+                          aonde ambos protagonizaram duas finais de paulistas que aumentaram as 
+                          tensões entre os clubes da capital, sendo o São Paulo campeão em 1971 
+                          e o Palmeiras em 1972, os clubes também já se enfrentaram diretamente 
+                          na classificação na copa libertadores, tendo o tricolor sempre levando 
+                          a melhor em todas as disputas.</p>
+                    </article>
+                </section>
+                
+                <!-- Modal Corinthians -->
+                <!--Classes do Bootstrap-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <!--Cabeçalho do Modal-->
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CORINTHIANS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Corpo do Modal-->
+                        <div class="modal-body">
+                          <!--Inserção Do Carrousel-->
+                          <!--Classe do Bootstrap-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="imagens/corinthians/torcida.jpg" class="d-block w-100" alt="Torcida">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/corinthians/estadio.webp" class="d-block w-100" alt="Estádio">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/corinthians/titulo.jpg" class="d-block w-100" alt="Título">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Próximo</span>
+                                </button>
+                              </div>
+                        </div>
+                        <!--Footer do Modal-->
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <!--Modal São Paulo-->
+                <!--Classes do Bootstrap-->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content"> 
+                      <!--Cabeçalho do Modal-->
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">São Paulo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Corpo do Modal-->
+                        <div class="modal-body">
+                          <!--Inserção Do Carrousel-->
+                          <!--Classe do Bootstrap-->
+                            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="imagens/São Paulo/torcida.jpg" class="d-block w-100" alt="Torcida">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/São Paulo/estadio.jpg" class="d-block w-100" alt="Estádio">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/São Paulo/titulo.jfif" class="d-block w-100" alt="Título">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Próximo</span>
+                                </button>
+                              </div>
+                        </div>
+                          <!--Footer do Modal-->
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <!--Modal Palmeiras-->
+                <!--Classes do Bootstrap-->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content"> 
+                       <!--Cabeçalho do Modal-->
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Palmeiras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                         <!--Corpo do Modal-->
+                        <div class="modal-body">
+                          <!--Inserção Do Carrousel-->
+                          <!--Classe do Bootstrap-->
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="imagens/palmeiras/torcida.jpg" class="d-block w-100" alt="Torcida">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/palmeiras/estadio.jpg" class="d-block w-100" alt="Estádio">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="imagens/palmeiras/titulo.png" class="d-block w-100" alt="Título">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Próximo</span>
+                                </button>
+                              </div>
+                        </div>
+                        <!--Footer do Modal-->
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </main>
+
+            <!--Footer-->
+            <footer class="rodape">
+                
+                <p>&copy; Design by Villas</a>.</p>
+                
+            </footer>
+        
+    </body>
+</html>
